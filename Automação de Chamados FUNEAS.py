@@ -5,6 +5,8 @@ import os
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.service import Service
 
+#Autor: Rafael Ribeiro Moura
+
 servico = Service(r"c:\Users\rafael.moura\Documents\AUTOMAÇÃO\chromedriver.exe")
 
 def clear():
@@ -216,9 +218,9 @@ def abrir_chamado_funeas(tipo_problema, descricao):
     driver.maximize_window()
     driver.get("http://10.29.234.245/chamado/index.php")
     time.sleep(1)
-    pyautogui.write('marcosbernardes')
+    pyautogui.write('----Login----')
     pyautogui.press("tab")
-    pyautogui.write('Bernardes02!')
+    pyautogui.write('----Senha----')
     pyautogui.press("enter")
     time.sleep(6)
     pyautogui.click(94, 196)
